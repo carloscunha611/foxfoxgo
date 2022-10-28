@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: $dark;
+  &.light {
+    background-color: #f8f8f8;
+  }
+}
+
+nav {
+  display: flex;
+  padding: 5px 20px;
+  flex-direction: row-reverse;
+  user-select: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  font-size: 20pt;
+}
+
+li div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.megafone {
+  filter: brightness(0.5);
+  &:hover {
+    filter: brightness(1);
+  }
+}
+
+select {
+  display: flex;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $whiteDark;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  &:hover {
+    color: $lightWhiteDark;
+  }
+}
+
+.megafoneIco {
+  width: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 20%;
+  color: $whiteDark;
+  user-select: none;
+  &:hover {
+    color: $lightWhiteDark;
+    transition: 0.5s;
+  }
+}
+.cut {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+p {
+  margin-right: -20px;
+}
+
+section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 25%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.logoDark {
+  width: 15em;
+  height: 12em;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+form {
+  display: flex;
+}
+
+.search {
+  width: 35em;
+  height: 2.8em;
+  font-size: 12pt;
+  background: $lightDark;
+  color: $lightWhiteDark;
+  border-radius: 5px 0px 0px 5px;
+  padding: 0px 20px;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  color: $whiteDark;
+  height: 3.35em;
+  width: 3.35em;
+  background-color: $lightDark;
+  border-radius: 0px 3px 3px 0px;
+  border-style: none;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.3s;
+    background-color: $color-link;
+  }
+}
+
+.btn img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.05em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $lightWhiteDark;
+  font-size: 10pt;
+  user-select: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: $lightWhiteDark;
+  &:hover {
+    color: $color-link;
+  }
+}
+
+@media (max-width: 428px) {
+  .search {
+    width: 20em;
+  }
+}
+
+@media (max-width: 360px) {
+  .search {
+    width: 15em;
+  }
+}
